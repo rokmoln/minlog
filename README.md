@@ -5,7 +5,7 @@ inspired by [bunyan](https://github.com/trentm/node-bunyan)
 which was meant to be "a simple and fast JSON logging module",
 but in time got one too many built-in (aka forced) features.
 This minimalism translates to high performance as well,
-as seen in [benchmarks](https://github.com/tobiipro/minlog/issues/18).
+as seen in [benchmarks](https://github.com/rokmoln/minlog/issues/18).
 
 `minlog` works with 4 concepts:
 
@@ -158,5 +158,5 @@ python_prelude \[%{word:level}\]?\s+(%{date("yyyy-MM-dd'T'HH:mm:ss.SSSZ"):timest
 [Apache 2.0](LICENSE)
 
 
-  [1]: https://travis-ci.com/tobiipro/minlog
-  [2]: https://travis-ci.com/tobiipro/minlog.svg?branch=master
+  [1]: https://travis-ci.com/rokmoln/minlog
+  [2]: https://travis-ci.com/rokmoln/minlog.svg?branch=master
