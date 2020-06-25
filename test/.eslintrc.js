@@ -3,5 +3,9 @@ module.exports = {
 
   extends: [
     'firecloud/configs/jest'
-  ]
+  ],
+
+  rules: {
+    'max-lines-per-function': 'off'
+  }
 };
