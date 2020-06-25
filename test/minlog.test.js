@@ -123,6 +123,12 @@ describe('minlog', function() {
         expect(upperLevelCode).toBe(vanillaLevelCode);
       });
     });
+
+    it('should throw if level is unknown', function() {
+      expect(function() {
+        logger.levelToLevelCode('unknown');
+      }).toThrow(/^Unknown level name unknown./);
+    });
   });
 
   describe('levelToLevelName', function() {
@@ -148,6 +154,12 @@ describe('minlog', function() {
 
         expect(levelName).toBe(`lvl${level}`);
       });
+    });
+
+    it('should throw if level is unknown', function() {
+      expect(function() {
+        logger.levelToLevelName('unknown');
+      }).toThrow(/^Unknown level name unknown./);
     });
   });
 
