@@ -46,6 +46,11 @@ export class BaseMinLog {
   time: MinLogLogFn;
 
   constructor(options: MinLogOptions = {}) {
+    this._queue = _.clone(this._queue);
+    this.serializers = _.clone(this.serializers);
+    this.listeners = _.clone(this.listeners);
+    this.levels = _.clone(this.levels);
+
     _.mergeConcatArrays(this, options);
 
     _.forEach(this.levels, (levelCode, levelName) => {
