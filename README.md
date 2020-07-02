@@ -97,7 +97,7 @@ and decide to ignore it or not.
 
 If you intend to use minlog in a AWS Lambda and want Datadog to properly parse `minlog` messages, use
 
-<details><summary>this definition</summary>:
+<details><summary>this definition:</summary>
 
 ```grok
 minlog_rule %{minlog_timestamp}\s+%{minlog_lambda_request_id}\s+%{minlog_level}\s+(%{minlog_src}\s+)?%{minlog_msg}\s+%{minlog_extra}
@@ -134,7 +134,9 @@ fallback_json (%{date("yyyy-MM-dd'T'HH:mm:ss.SSSZ"):timestamp}|%{date("yyyy-MM-d
 # 2019-07-18T19:47:18.146Z	95ce2ab7-cf99-4030-bede-2055a69cedec	ERROR	This is a regular node error
 ```
 
-Advanced settings: Extract from `message`:
+Advanced settings:
+
+Extract from `message`:
 
 ```grok
 minlog_timestamp %{date("yyyy-MM-dd'T'HH:mm:ss.SSSZ"):timestamp}
