@@ -160,5 +160,5 @@ python_prelude \[%{word:level}\]?\s+(%{date("yyyy-MM-dd'T'HH:mm:ss.SSSZ"):timest
 [Apache 2.0](LICENSE)
 
 
-  [1]: https://travis-ci.com/rokmoln/minlog
-  [2]: https://travis-ci.com/rokmoln/minlog.svg?branch=master
+  [1]: https://github.com/rokmoln/minlog/actions?query=workflow%3ACI+branch%3Amaster
+  [2]: https://github.com/rokmoln/minlog/workflows/CI/badge.svg?branch=master
